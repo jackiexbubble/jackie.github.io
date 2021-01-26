@@ -1,0 +1,272 @@
+/************************* For index.html *************************/
+body {
+    font: Calibri;
+}
+
+#rcol {
+    padding-top: 20px;
+}
+
+#name {
+    font-size: 36px;
+}
+
+#icons {
+    font-size:1rem;
+    color: tomato;
+}
+#icons a {
+    color:inherit;
+    margin: 2px;
+}
+
+#menu {
+    font-size: 22px;
+    color: #5D6D7E;
+}
+
+#menu a {
+    font-size: inherit;
+    color: inherit;
+}
+/************************* General Formatting *************************/
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #4d4d4d;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.8;
+    color: #e9a296; /*ffa899;*/
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/************************* Navigation Menu *************************/
+#main {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+#mobile-nav a {
+    display: none;
+}
+
+#mobile-nav i {
+    display: none; /*block;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background: transparent;
+    color: grey;
+    font-size: 35px;
+    padding: 10px 25px 25px;
+}
+
+#side-nav {
+    display: block;
+    padding-top: 100px;
+    background-color: #ffeeee; /*#f0f2f4;*/
+    width: 100%;
+}
+
+#side-nav a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #5D6D7E;
+}
+
+#side-nav a.active {
+    background: tomato; /*#6c7f93;*/
+    color: white;
+}
+
+#side-nav a:hover {
+    text-decoration: none;
+    background: tomato; /*#6c7f93;*/
+    color: white;
+}
+@media screen and (min-width: 801px) {
+    #side-nav {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #side-nav {
+        display: none;
+        position: fixed;
+        left: 0;
+        z-index: 1;
+        transition: 1s;
+        margin-top: 0px;
+        padding-top: 70px;
+        height: 100%;
+    }
+    #main {
+        margin-left: 50px;
+    }
+    #mobile-nav i {
+        display: block;
+    }
+}
+
+
+
+/************************* CV.html *************************/
+td {
+    padding: 5px 15px 5px 0px;
+}
+
+/************************* scratch.html *************************/
+#scratch {
+    padding: 0;
+    /*Height:100vh;
+    Width:100vw;*/
+}
+
+/************************* interests.html *************************/
+#collage {
+    width: 70%;
+    text-align: center;
+    line-height: 0.8;
+}
+#make {
+    font-size: 2vw ;
+    font-weight: 700;
+    color: teal;
+}
+#fashion {
+    font-size: 6vw;
+    font-weight: 100;
+    color: tomato;
+}
+#prog {
+    font-size: 5vw;
+    font-weight: 500;
+    color: tomato;
+}
+#cs50 {
+    font-size: 5vw;
+    font-weight: 400;
+    color: grey;
+}
+#bbt {
+    font-size: 3vw;
+    font-weight: 500;
+    color: orange;
+}
+#travel {
+    font-size: 3vw;
+    font-weight: 600;
+    color: forestgreen;
+}
+#run {
+    font-size: 3vw;
+    font-weight: 400;
+    color: fuchsia;
+}
+#env {
+    font-size: 3vw;
+    font-weight: 500;
+    color: limegreen;
+}
+#sustain {
+    font-size: 5vw;
+    font-weight: 600;
+    color: steelblue;
+}
+#kind {
+    font-size: 4vw;
+    font-weight: 500;
+    color: lightcoral;
+}
+#css {
+    font-size: 2vw;
+    font-weight: 500;
+    color: hotpink;
+}
+#startup {
+    font-size: 3vw;
+    font-weight: 700;
+    color: cadetblue;
+}
+#html {
+    font-size: 2vw;
+    font-weight: 800;
+    color: tomato;
+}
+#learn {
+    font-size: 6vw;
+    font-weight: 200;
+    color: navy;
+}
+
+/************************* css.html *************************/
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+}
+
+.grid-container div {
+    /*-color: rgba(255, 255, 255, 0.7);*/
+    padding: 5px 5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+}
+
+.color1 { background-color: orange; }
+.color2 { background-color: lightsteelblue; }
+.color3 { background-color: cornflowerblue; }
+.color4 { background-color: thistle; }
+.color5 { background-color: darkturquoise; }
+
+#C { grid-area: 1 / 1 / span 2/ span 2; }
+#python { grid-area: 1 / 3 / span 1 / span 2 }
+#sql { grid-area: 3 / 6 / span 2 / span 1; }
+#htm { grid-area: 3 / 1 / span 3 / span 1; }
+#cSS { grid-area: 2 / 4 / span 2 / span 2; }
+#java { grid-area: 4 / 2 / span 3 / span 3; }
+#flask { grid-area: 1 / 8 / span 2 / span 1; }
+#nodejs { grid-area: 7 / 1 / span 1 / span 2; }
+#react { grid-area: 7 / 6 / span 1 / span 2; }
+#kube { grid-area: 7 / 4 / span 2 / span 2; }
+#cicd { grid-area: 4 / 8 / span 2 / span 1; }
+#devops { grid-area: 3 / 7 / span 1 / span 2; }
+#contain { grid-area: 5 / 5 / span 2 / span 3; }
+#vba { grid-area: 7 / 8 / span 1 / span 1; }
+#api { grid-area: 8 / 7 / span 1 / span 2; }
+#bQuery { grid-area: 1 / 5 / span 1 / span 2; }
+#mongo { grid-area: 2 / 6 / span 1 / span 2; }
+#json { grid-area: 4 / 7 / span 1 / span 1; }
+#tableau { grid-area: 3 / 2 / span 1 / span 2; }
+#elastic { grid-area: 8 / 2 / span 1 / span 2; }
